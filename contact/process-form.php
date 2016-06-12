@@ -76,7 +76,7 @@ if(isset($_POST['send'])) {
 		$mail->Body     =  "<strong>Full Name:</strong> " . $contactName. ".<br/>";
 		$mail->Body     .=  "<strong>Subject:</strong> " . $subject. ".<br/>";
 		$mail->Body     .= "<strong>Message:</strong> " . $message. ".";
-		$mail->AddAddress('cosminiorgus@gmail.com');
+		$mail->AddAddress('watertheearth@sajal.xyz');
 		$mail->AddReplyTo($email);
 		
 		if(!$mail->Send()) {  // send e-mail
